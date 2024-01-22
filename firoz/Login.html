@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+
+<body>
+    <div class="body">
+        <header>
+            <h2 class="Logo">Logo</h2>
+            <nav class="Navigation">
+                <a class="home" href="#">Home</a>
+                <a class="Register" href="Register.html">Register</a>
+                <a class="Services" href="#">Services</a>
+                <a class="Contact" href="#">Contact</a>
+                <button class="btnLogin-popup">Login</button>
+            </nav>
+        </header>
+        <div id="chghome" class="homepageclose">
+            <div onclick="window.open('../index.html')">Feedback Page</div>
+            <div onclick="window.open('../firoz/stationary/stationary.html')">Stationary</div>
+            <div onclick="window.open('../jaswanth/foodorder.html')">Cafeteria</div>
+        </div>
+        <div id="chgwrap" class="wrapper">
+            <div class="form-box Login"> 
+                <h2>Login</h2>
+                <form action="">
+                    <div class="input-box">
+                        <label>Email</label>
+                        <input type="email" id="email" placeholder="@mphasis.com" required>
+                        <span class="icon" ><ion-icon name="mail"></ion-icon></span>
+                    </div>
+                    <div class="input-box">
+                        <label>Password</label>
+                        <input type="password" id="password" required>
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    </div>
+                    <div class="Remember-forgot">
+                        <label><input type="checkbox">
+                        Remember Me</label><p>
+                       <a style="color: red;font-size: 13px;" id="forgot" href="#">Forgot Password?</a></p>
+                    </div>
+                   <button type="Submit" id="btn">Login</button>
+                    <div class="Login-Register">
+                        <p style="font-size: 13px;">Don't have an account? <a style="color:green" href="Register.html" class="Register-Link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="chgpass" class="chgpassclose">
+            <p style="font-size: 20px;font-weight: 700;">Please enter your registered emailID!!</p>
+            <label style="font-weight: 600;">EmailID:</label>
+               <input style="padding:7px;margin: 3px;" type="text" id="forpass" placeholder="enter your email" autocomplete="off"/>
+               <button id="press" style="width: 80px;height: 30px;background-color: rgb(60, 60, 219);">Submit</button>
+        </div>
+        <div id="passcrt">
+
+        </div>
+    </div>
+   
+
+
+    <script type="module" src="LoginScript.js"></script>
+    <!-- <script type="module" src="Register.js"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="Register.css"/>
+</head>
+<body>
+    <header>
+        <h2 class="Logo">Logo</h2>
+        <nav class="Navigation">
+            <a href="#" class="home">Home</a>
+            <a href="Login.html" class="home">Login</a>
+            <a href="#" class="home">Services</a>
+            <a href="#" class="home">Contact</a>
+            <button class="btnRegister-popup">Register</button>
+        </nav>
+    </header>
+    <div class="Container">
+        <form id="registration form" action="#">
+         <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="employeeId">EmployeeID:</label>
+          <input type="text" id="employeeId" name="employeeId" required>
+
+          <label for="location">Location:</label>
+          <!-- <input type="text" id="locat" name="location" required> -->
+          <select name="Locationo" id="location-order">
+            <option value="none">Select Location</option>
+            <option value="Bangalore WTC1">Bangalore WTC1</option>
+            <option value="Bangalore WTC2">Bangalore WTC2</option>
+            <option value="Pune Block1">Pune Block1</option>
+            <option value="Pune Block2">Pune Block2</option>
+            <option value="Chennai Block1">Chennai Block1</option>
+            <option value="Chennai Block2">Chennai Block2</option>
+            </select>
+            <p id="locate-order" class="locate-orders">Please select location..</p>
+
+          <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <p id="sap">@mphasis.com</p>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password">
+
+          <button type="submit" value="sumbit" id="regis">Register</button>
+
+        </form>
+    </div>
+
+    <script type="module" src="Register.js"></script>
+    <!-- <script type="module" src="LoginScript.js"></script> -->
+</body>
+</html>
